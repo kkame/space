@@ -1,0 +1,43 @@
+{
+  "name": "kkame/space",
+  "description": "A simple PHP package for Jetbrains Space",
+
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kkame",
+      "email": "kkamenet@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "ext-json": "*",
+    "guzzlehttp/guzzle": "^6.5",
+    "netresearch/jsonmapper": "^1.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5",
+    "vlucas/phpdotenv": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+
+      "Kkame\\Space\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "tests/bootstrap.php"
+    ],
+    "psr-4": {
+
+      "Tests\\Space\\": "tests"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.1"
+    }
+  }
+}
